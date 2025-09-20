@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Tabula
+Comment=A focused academic writing application using PyQt6.
+Exec=tabula
+Icon=tabula
+Terminal=false
+Type=Application
+Categories=Office;TextEditor;

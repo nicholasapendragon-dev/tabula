@@ -1,0 +1,30 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+lib/
+lib64/
+bin/
+include/
+share/
+*.egg-info/
+.coverage
+.pytest_cache/
+
+# IDE and OS ignores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Tabula-specific ignores (adjust if your notes_path or project_path are different)
+# These are typically dynamic data or user-specific, not core code.
+TabulaProject/ # If you created this project folder *inside* tabula-2.0.0
+*.config # General config files
+config.json # Specific Tabula config
+notes/comments/ # If comments are in a subfolder of notes
+assets/splash.png # Splash image is often unique/large, might not want to track if it's external

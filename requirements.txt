@@ -1,0 +1,5 @@
+python-docx
+markdown
+fpdf2
+pyspellchecker
+PyQt6

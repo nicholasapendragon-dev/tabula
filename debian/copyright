@@ -1,0 +1,10 @@
+Upstream-Name: Tabula
+Upstream-Contact: Nicholas Pendragon <nicholasapendragon@gmail.com>
+
+Files: *
+Copyright: 2025 Nicholas Pendragon <nicholasapendragon@gmail.com>
+License: Please specify your license (e.g., GPL-3.0-or-later, MIT)
+
+Files: debian/*
+Copyright: 2025 Nicholas Pendragon <nicholasapendragon@gmail.com>
+License: Please specify your license (e.g., GPL-3.0-or-later, MIT)

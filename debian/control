@@ -1,0 +1,12 @@
+Source: tabula-writer
+Section: editors
+Priority: optional
+Maintainer: Pendragon <author@example.com>
+Build-Depends: debhelper-compat (= 13), dh-virtualenv
+
+Package: tabula-writer
+Architecture: any
+Depends: ${misc:Depends}, python3
+Description: A markdown-based writing application with multiple panels
+ A modern writing application for creative and technical writing,
+ featuring multiple panels for notes, chapters, and editing.

@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+echo "Running post-installation script to install pip dependencies..."
+pip install --break-system-packages fpdf2 pyspellchecker
+
+exit 0

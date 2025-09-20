@@ -1,0 +1,11 @@
+Package: tabula
+Version: 2.0.0-1
+Architecture: all
+Maintainer: Nicholas Pendragon <nicholasapendragon@gmail.com>
+Installed-Size: 496
+Depends: python3, python3-pyqt6, python3-docx, python3-markdown, python3-pip
+Section: editors
+Priority: optional
+Description: A focused academic writing application using PyQt6.
+ Tabula is a minimalist writer deck application designed for academic
+ writing and focused work sessions.

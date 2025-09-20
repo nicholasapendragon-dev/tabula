@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python-virtualenv
+
+# Add these empty overrides to skip the default build steps
+# that conflict with dh-virtualenv.
+override_dh_auto_configure:
+override_dh_auto_build:
+override_dh_auto_install:
