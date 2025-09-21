@@ -6,7 +6,7 @@ def read_readme():
     return open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 setup(
-    name='tabula-writer',
+    name='tabula',
     version='0.1.0', # Start with 0.1.0, you can increment this for releases
     author='Nicholas A. Pendragon-Dev',
     author_email='Nicholasapendragon@gmail.com',
