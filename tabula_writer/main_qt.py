@@ -372,9 +372,9 @@ class WriterDeckApp(QMainWindow):
             "Increase Font Size": ("Ctrl+Shift++", self.increase_font_size),
             "Decrease Font Size": ("Ctrl+Shift+-", self.decrease_font_size),
             "Update Program": ("Ctrl+Shift+U", self.run_updater),
-            # --- NEW PANEL NAVIGATION SHORTCUTS ---
-            "Navigate Panel Left": ("Ctrl+Alt+Left", self.navigate_panels_left),
-            "Navigate Panel Right": ("Ctrl+Alt+Right", self.navigate_panels_right),
+            # --- UPDATED PANEL NAVIGATION SHORTCUTS ---
+            "Navigate Panel Left": ("Ctrl+Shift+Left", self.navigate_panels_left),
+            "Navigate Panel Right": ("Ctrl+Shift+Right", self.navigate_panels_right),
         }
         
         actions = []
@@ -534,7 +534,7 @@ class WriterDeckApp(QMainWindow):
         if not paths:
             QMessageBox.information(self, "Not Found", f"No occurrences of '[[{link}]]' were found in the project.")
             return
-        matches = [f for f in self._get_all_project_files() if f['path'] in paths] # FIXED: Removed extra 'f'
+        matches = [f for f in self._get_all_project_files() if f['path'] in paths]
         if not matches:
             QMessageBox.information(self, "Not Found", f"No occurrences of '[[{link}]]' were found in the project.")
             return
@@ -549,7 +549,7 @@ class WriterDeckApp(QMainWindow):
 
     def on_tag_click(self, tag):
         paths = self.search_indexer.get_files_for_tag(tag)
-        matches = [f for f in self._get_all_project_files() if f['path'] in paths] # FIXED: Removed extra 'f'
+        matches = [f for f in self._get_all_project_files() if f['path'] in paths]
         if matches: TagPopup(tag[1:], matches, self.load_document, self).show_animated()
 
     def _get_footnotes_for_export(self):
@@ -616,7 +616,7 @@ class WriterDeckApp(QMainWindow):
     def show_tag_popup(self):
         pass # Placeholder for future direct tag popup access
 
-if __name__ == "__main__":
+def main(): # Wrapped the startup code in a function
     app = QApplication(sys.argv)
     app.setQuitOnLastWindowClosed(True)
     
@@ -629,6 +629,9 @@ if __name__ == "__main__":
 
     main_win = WriterDeckApp()
     main_win.show()
-    main_win.showFullScreen() # ADDED THIS LINE
+    main_win.showFullScreen()
     splash.finish(main_win)
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main() # Call the main function
