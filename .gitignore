@@ -28,3 +28,6 @@ TabulaProject/ # If you created this project folder *inside* tabula-2.0.0
 config.json # Specific Tabula config
 notes/comments/ # If comments are in a subfolder of notes
 assets/splash.png # Splash image is often unique/large, might not want to track if it's external
+
+# Packaging artifacts
+dist/
